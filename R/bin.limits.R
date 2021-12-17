@@ -1,4 +1,4 @@
-
+#tes
 
 bin.limits<-function(DBase,locus){
 
