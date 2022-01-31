@@ -41,6 +41,7 @@ if(exists("Tab")){  TAB <- rbind(TAB, Tab)
                   }
 
   }
+    attr(TAB$Fragment, "na.action") <- NULL	 
   TAB
 }
 
