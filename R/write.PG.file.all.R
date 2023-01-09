@@ -2,8 +2,8 @@ write.PG.file.all<-function (DB, refDB = DB, outfile = "Population genetics file
 {
     Samples <- levels(as.factor(DB[, 2]))
     Nsamples <- nlevels(as.factor(DB[, 2]))
-    Markers <- levels(DB[, 1])
-    Nmarkers <- nlevels(DB[, 1])
+    Markers <- unique(DB[, 1])
+    Nmarkers <- length(Markers)
     Nalleles<-Nmarkers*2
     PopGenTab <- 1:((Nsamples + 1) * (Nalleles + 1))
     dim(PopGenTab) <- c(Nsamples + 1, Nalleles + 1)
