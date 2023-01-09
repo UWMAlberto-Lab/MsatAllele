@@ -4,8 +4,8 @@ write.PG.file.loc<-function (DB, refDB = DB, outfile = "Population genetics file
 {
     Samples <- levels(as.factor(DB[, 2]))
     Nsamples <- nlevels(as.factor(DB[, 2]))
-    Markers <- levels(DB[, 1])
-    Nmarkers <- nlevels(DB[, 1])
+    Markers <- unique(DB[, 1])
+    Nmarkers <- length(Markers)
     PopGenTab <- 1:((Nsamples + 1) * (Nmarkers + 1))
     dim(PopGenTab) <- c(Nsamples + 1, Nmarkers + 1)
     PopGenTab[1, 1] <- ""
