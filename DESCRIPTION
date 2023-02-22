@@ -4,7 +4,7 @@ Title: Visualizes the scoring and binning of microsatellite fragment
         sizes
 Version: 1.05
 Date: 2013-11-14
-Author: Filipe Alberto teste
+Author: Filipe Alberto
 Maintainer: Filipe Alberto <albertof@uwm.edu>
 Description: The package contains functions to: 1) load ah files from Strand software and build a R data 
 	base; 2) plot different graphical displays of the fragment sizes obtained for each locus and their bins; 3) 
